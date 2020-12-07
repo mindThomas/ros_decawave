@@ -28,8 +28,8 @@ class DecawaveDriver(object):
         rospy.loginfo("\33[96mConnected to %s at %i\33[0m", self.ser.portstr, self.baudrate_)
         self.get_uart_mode()
         self.switch_uart_mode()
-        self.get_tag_status()
-        self.get_tag_version()
+        #self.get_tag_status()
+        #self.get_tag_version()
         self.anchors = AnchorArray()
         self.anchors.anchors = []
         self.tag = Tag()
